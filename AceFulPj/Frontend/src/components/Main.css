@@ -1,0 +1,19 @@
+.main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-alert {
+    flex: 1;
+    background-color: #e9ecef;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.details {
+    flex: 2;
+    background-color: #f8f9fa;
+    padding: 10px;
+}

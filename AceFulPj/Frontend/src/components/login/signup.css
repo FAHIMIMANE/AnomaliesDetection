@@ -1,0 +1,114 @@
+/* Corps de la page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fc;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+/* Conteneur principal */
+.signup-container {
+    display: flex;
+    max-width: 900px;
+    width: 90%; 
+    height: 75vh; 
+    background: #fff;
+    border-radius: 15px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+}
+
+/* Section gauche (formulaire) */
+.signup-left {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007bff;
+    text-align: center;
+}
+
+/* Champs de formulaire */
+.form-group {
+    width: 100%; 
+    margin-bottom: 15px; 
+    text-align: left; 
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #555;
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.form-group input {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Bouton Sign up */
+button {
+    display: block; 
+    width: 80%; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px auto 0;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Lien "Login" */
+.options {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.options a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+/* Section droite (image) */
+.signup-right {
+    flex: 1;
+    background-color: #e0f0ff;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.signup-image {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: cover; 
+    border-radius: 15px; 
+}

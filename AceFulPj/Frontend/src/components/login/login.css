@@ -1,0 +1,180 @@
+/* Corps de la page */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f8fc;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    overflow: hidden; 
+}
+
+/* Conteneur principal */
+.login-container {
+    display: flex;
+    flex-direction: row; 
+    max-width: 900px;
+    width: 90%; 
+    height: 75vh; 
+    background: #ffffff;
+    border-radius: 15px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-container:hover {
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2); 
+}
+
+/* Section gauche (formulaire) */
+.login-left {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    gap: 15px; 
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Champs de formulaire */
+.form-group {
+    width: 100%; 
+    margin-bottom: 20px; 
+    text-align: left; 
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Bouton Login */
+button {
+    display: block; 
+    width: 85%; 
+    padding: 12px 20px; 
+    border: none;
+    border-radius: 8px; 
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    margin: 20px auto 0;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); 
+}
+
+/* Lien "Forgot Password" */
+.options {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.options a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+/* Section droite (image) */
+.login-right {
+    flex: 1;
+    background: linear-gradient(135deg, #e0f7ff, #cce7ff); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.login-image {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: cover; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Sign up */
+.signup {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+.signup a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    .login-left,
+    .login-right {
+        flex: unset;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .login-right {
+        background-color: #f4f8fc;
+    }
+
+    .login-image {
+        max-width: 100%;
+        max-height: 60%;
+    }
+}

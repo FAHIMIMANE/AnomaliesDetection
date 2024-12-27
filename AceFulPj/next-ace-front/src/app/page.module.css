@@ -1,0 +1,25 @@
+.page {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.startButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.startButton:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.startButton:active {
+  background-color: #003f7f; /* Darker shade when the button is pressed */
+}
